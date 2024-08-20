@@ -24,6 +24,7 @@ namespace Biblioteca_Virtual.Controllers
 
             if (retorno == null)
             {
+                TempData["Mensagem"] = "Usuário não encontrado! Tente novamente.";
                 return RedirectToAction("Index");
             }
             else

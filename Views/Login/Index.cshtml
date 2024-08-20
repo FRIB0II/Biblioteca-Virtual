@@ -20,7 +20,12 @@
             <input style="margin-bottom:10%; padding:2%;" type="password" placeholder="Digite uma senha." required="True" maxlength="12" asp-for="Senha" />
 
             <button type="submit">Fazer login</button>
+
+            <div style="margin-top:8%;">
+                <span>@TempData["Mensagem"]</span>
+            </div>
         </form>
+        
     </main>
 </body>
 </html>
