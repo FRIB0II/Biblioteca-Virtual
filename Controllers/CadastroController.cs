@@ -1,4 +1,5 @@
-﻿using Biblioteca_Virtual.Repositório.Interfaces;
+﻿using Biblioteca_Virtual.Models;
+using Biblioteca_Virtual.Repositório.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Biblioteca_Virtual.Controllers
@@ -15,6 +16,13 @@ namespace Biblioteca_Virtual.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult Cadastrar(UsuarioModel usuario)
+        {
+            _usuarioRepositorio.Adicionar(usuario);
+            return Redirect("/");
         }
     }
 }

@@ -1,0 +1,38 @@
+* {
+    margin:0%;
+    padding:0%;
+    position:relative;
+}
+
+#corpo-pg-cadastro-login {
+    background-color: #F5F5DC;
+}
+
+#disposicao-formulario-cadastro-login {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#formulario-cadastro-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 3%;
+    margin-top: 5%;
+    font-size: 18px;
+    background-color: #556B2F;
+}
+
+button {
+    background-color: #F5F5DC;
+    border: 1px solid black;
+    padding: 3%;
+    font-size:14px;
+}
+
+button:hover {
+    background-color: #c3bebe;
+}

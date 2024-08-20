@@ -1,0 +1,26 @@
+﻿@model UsuarioModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="./css/site.css" rel="stylesheet" />
+    <link href="~/Images/logo.jpg" rel="icon" type="image/x-icon" />
+    <title>Biblioteca Virtual - Login</title>
+</head>
+<body id="corpo-pg-cadastro-login">
+    <main id="disposicao-formulario-cadastro-login">
+
+        <form id="formulario-cadastro-login" method="get" asp-controller="Login" asp-action="FazerLogin">
+            <label style="text-align:center;margin-bottom:5%;">Login Biblioteca Virtual</label>
+
+            <label>Email</label>
+            <input style="margin-bottom:10%; padding:2%;" type="email" placeholder="Digite seu email." required="True" asp-for="Email" />
+
+            <label>Senha</label>
+            <input style="margin-bottom:10%; padding:2%;" type="password" placeholder="Digite uma senha." required="True" maxlength="12" asp-for="Senha" />
+
+            <button type="submit">Fazer login</button>
+        </form>
+    </main>
+</body>
+</html>

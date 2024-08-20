@@ -8,6 +8,8 @@ namespace Biblioteca_Virtual.Repositório.Interfaces
 
         UsuarioModel BuscarPorId(int id);
 
+        UsuarioModel BuscarPorEmailESenha(string Email, string Senha);
+
         UsuarioModel Atualizar(UsuarioModel usuario);
 
         bool Deletar(int id);

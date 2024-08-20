@@ -14,12 +14,19 @@ namespace Biblioteca_Virtual.Repositório.Interfaces
 
         public UsuarioModel Adicionar(UsuarioModel usuario)
         {
-            throw new NotImplementedException();
+            _contextdb.Add(usuario);
+            _contextdb.SaveChanges();
+            return usuario;
         }
 
         public UsuarioModel Atualizar(UsuarioModel usuario)
         {
             throw new NotImplementedException();
+        }
+
+        public UsuarioModel BuscarPorEmailESenha(string Email, string Senha)
+        {
+            return _contextdb.Usuarios.FirstOrDefault(x => x.Email == Email && x.Senha == Senha);
         }
 
         public UsuarioModel BuscarPorId(int id)
