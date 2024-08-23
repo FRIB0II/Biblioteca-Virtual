@@ -21,9 +21,12 @@
 
             <button type="submit">Fazer login</button>
 
-            <div style="margin-top:8%;">
+            <div style="margin:8% 0% 0% 0%;">
                 <span>@TempData["Mensagem"]</span>
             </div>
+
+            <p>Não possui cadastro? clique <a asp-controller="Cadastro" asp-action="Index">aqui</a> para cadastrar.</p>
+            
         </form>
         
     </main>
