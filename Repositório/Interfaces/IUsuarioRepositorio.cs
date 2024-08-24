@@ -6,12 +6,12 @@ namespace Biblioteca_Virtual.Repositório.Interfaces
     {
         UsuarioModel Adicionar(UsuarioModel usuario);
 
-        UsuarioModel BuscarPorId(int id);
+        UsuarioModel BuscarPorId(int Id);
 
         UsuarioModel BuscarPorEmailESenha(string Email, string Senha);
 
         UsuarioModel Atualizar(UsuarioModel usuario);
 
-        bool Deletar(int id);
+        bool Deletar(int Id);
     }
 }

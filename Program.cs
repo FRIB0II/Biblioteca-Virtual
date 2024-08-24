@@ -1,4 +1,5 @@
 using Biblioteca_Virtual.Data;
+using Biblioteca_Virtual.Repositório;
 using Biblioteca_Virtual.Repositório.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
@@ -24,6 +25,8 @@ namespace Biblioteca_Virtual
 
             // Injeção de dependência
             builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
+            builder.Services.AddScoped<ILivroRepositorio, LivroRepositorio>();
+            builder.Services.AddScoped<IEmprestimoRepositorio, EmprestimoRepositorio>();
 
             var app = builder.Build();
 

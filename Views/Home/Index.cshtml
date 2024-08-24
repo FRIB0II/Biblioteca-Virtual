@@ -1,26 +1,51 @@
 ﻿<!DOCTYPE html>
-    <html>
-    <head>
-        <title>Biblioteca Virtual - Página Inicial</title>
-    </head>
-    <body class="corpo-site">
-        <header>
-            <nav class="cabecalho">
-                <img style="height:100px; width:100px;" src="~/Images/logo.jpg" alt="Logo Biblioteca Virtual." />
-                <ul class="lista-cabecalho">
-                    <li>
+<html>
+<head>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/Images/logo.jpg" rel="icon" type="image/x-icon" />
+    <title>Biblioteca Virtual - Página Inicial</title>
+</head>
+<body class="corpo-site">
+    <header>
+        <nav class="cabecalho">
+            <a asp-controller="Home" asp-action="Index">
+                <img style="height:100px; width:100px;" src="~/Images/logo-fundo-removido.png" alt="Logo Biblioteca Virtual." />
+            </a>
 
-                    </li>
-                </ul>
-            </nav>
-        </header>
+            <ul class="lista-cabecalho">
+                <li style="margin-top: 40%; right: 40%;">
+                    <a asp-controller="Emprestimos" asp-action="Index">Empréstimos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-        <main>
+    <main>
+        <section>
+            <div style="padding: 5%;">
+                <h3>O que somos?</h3>
+                <br />
+                <p>Primeiramente seja bem vindo!</p>
+                <p>A biblioteca virtual funciona da mesma forma que um biblioteca convencional,</p>
+                <p>mas, nesse caso, de forma totalmente online.</p>
+                <p>Aqui você pode fazer o empréstimo dos livros que mais gostar,</p>
+                <p>de forma totalmente gratuita. O processo é simples e rápido.</p>
+            </div>
 
-        </main>
+            <div style="padding: 0% 5% 5% 5%;">
+                <h3>Nosso objetivo</h3>
+                <br />
+                <p>Nosso objetivo e proporcionar livros gratuitos a todos</p>
+                <p>que amam a leitura. Não só isso, também acreditamos no incentivo</p>
+                <p>da disseminação da literatura como fator decisivo na formação humana.</p>
+            </div>
+        </section>
+    </main>
 
-        <footer>
+    <hr />
 
-        </footer>
-    </body>
-    </html>
+    <footer class="rodape">
+        <p style="text-align: center;">Bilioteca Virtual - 2024</p>
+    </footer>
+</body>
+</html>

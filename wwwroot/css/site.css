@@ -21,7 +21,7 @@
     border: 1px solid black;
     border-radius: 5%;
     padding: 3%;
-    margin-top: 5%;
+    margin-top: 4%;
     font-size: 18px;
     background-color: #556B2F;
 }
@@ -35,4 +35,31 @@ button {
 
 button:hover {
     background-color: #c3bebe;
+}
+
+.corpo-site {
+    background-color: #F5F5DC;
+}
+
+.cabecalho {
+    background-color: #8B4513;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lista-cabecalho {
+    list-style: none;
+}
+
+a {
+    color: #F5F5DC;
+}
+
+a:visited {
+    color: #F5F5DC;
+}
+
+.rodape {
+    margin-top: 5%;
 }

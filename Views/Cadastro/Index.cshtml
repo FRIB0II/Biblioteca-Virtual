@@ -4,16 +4,16 @@
 <html>
 <head>
     <link href="./css/site.css" rel="stylesheet" />
-    <link href="~/Images/logo.jpg" rel="icon" type="image/x-icon"/>
+    <link href="~/Images/logo.jpg" rel="icon" type="image/x-icon" />
     <title>Biblioteca Virtual - Cadastro</title>
 </head>
 <body id="corpo-pg-cadastro-login">
     <main id="disposicao-formulario-cadastro-login">
         <form id="formulario-cadastro-login" method="post" asp-controller="Cadastro" asp-action="Cadastrar">
             <label style="text-align:center;margin-bottom:5%;">Cadastro Biblioteca Virtual</label>
-            
+
             <label>Nome</label>
-            <input style="margin-bottom:10%; padding:2%;" type="text" placeholder="Digite seu nome." required="True" asp-for="Nome"/>
+            <input style="margin-bottom:10%; padding:2%;" type="text" placeholder="Digite seu nome." required="True" asp-for="Nome" />
 
             <label>Sobrenome</label>
             <input style="margin-bottom:10%; padding:2%;" type="text" placeholder="Digite seu sobrenome." required="True" asp-for="Sobrenome" />
@@ -26,7 +26,7 @@
 
             <label>Celular</label>
             <input style="margin-bottom:12%; padding:2%;" type="tel" placeholder="Número de celular." required="True" asp-for="Celular" />
-            
+
             <button type="submit">Cadastrar</button>
 
             <p style="margin-top: 5%;">Já possui login? Clique <a asp-controller="Login" asp-action="Index">aqui</a> para fazer o login.</p>
